@@ -1,13 +1,16 @@
 package application.model;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 /**
- * Created by militer on 02.04.2017.
+ * User: militer
+ * Date: 02.04.2017.
  */
 @Entity
-@Table(name="products")
-public class Product {
+@Table(name = "product")
+public class Product implements Serializable {
+    private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue
     @Column(name = "id")
