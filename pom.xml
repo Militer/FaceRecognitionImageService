@@ -5,8 +5,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.militaru.car-race</groupId>
-    <artifactId>car-engine</artifactId>
+    <artifactId>car-service</artifactId>
     <version>0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>car-race-car-service</name>
+    <description>The server responsible for the cars in the car race application</description>
+
 
     <parent>
         <groupId>org.springframework.boot</groupId>

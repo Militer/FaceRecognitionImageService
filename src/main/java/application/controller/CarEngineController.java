@@ -12,7 +12,7 @@ import java.util.List;
  * Date: 26.03.2017.
  */
 @RestController
-@RequestMapping("/")
+@RequestMapping("/car-engine")
 public class CarEngineController {
     private CarEngineService carEngineService;
 
