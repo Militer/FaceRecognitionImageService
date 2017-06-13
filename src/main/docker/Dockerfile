@@ -1,4 +1,4 @@
-FROM java:8
+FROM militer/opencv-java-base
 VOLUME /tmp
 ADD car-service-0.1-SNAPSHOT.jar app.jar
 EXPOSE 8081
