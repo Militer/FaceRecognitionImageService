@@ -29,7 +29,7 @@ public class ImageController {
             String originalFilename = image.getOriginalFilename();
             int lastDotIndex = originalFilename.lastIndexOf('.');
             ImageData imageToStore = new ImageData(
-                    originalFilename.substring(0, lastDotIndex - 1),
+                    originalFilename.substring(0, lastDotIndex),
                     originalFilename.substring(lastDotIndex + 1),
                     image.getBytes());
             imageService.uploadImage(imageToStore);
