@@ -39,12 +39,12 @@ public class ImageController {
         System.out.println("Got the file!");
     }
 
-    @GetMapping("/{imageName}")
-    public ImageData getImageURI(String imageName) {
-        return imageService.getImageByName(imageName);
+    @GetMapping(value="/{imageId}")
+    public ImageData getImage(@PathVariable Integer imageId) {
+        return imageService.getImage(imageId);
     }
 
-    @GetMapping()
+    @GetMapping
     public List<ImageData> getImages() {
         return imageService.getAllImages();
     }

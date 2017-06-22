@@ -18,12 +18,12 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/faceDetector")
-public class FaceImageDecector {
+public class FaceImageDetector {
     private final CascadeClassifier cascadeClassifier;
     private final ImageService imageService;
 
     @Autowired
-    public FaceImageDecector(CascadeClassifier cascadeClassifier, ImageService imageService) {
+    public FaceImageDetector(CascadeClassifier cascadeClassifier, ImageService imageService) {
         this.cascadeClassifier = cascadeClassifier;
         this.imageService = imageService;
     }
