@@ -4,13 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.militaru.car-race</groupId>
-    <artifactId>car-service</artifactId>
+    <groupId>com.militaru.face-recognition</groupId>
+    <artifactId>image-service</artifactId>
     <version>0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>car-race-car-service</name>
-    <description>The server responsible for the cars in the car race application</description>
+    <description>The server responsible for the images and the face recognition process</description>
 
 
     <parent>
@@ -21,7 +21,7 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <docker.image.prefix>militer/car-race</docker.image.prefix>
+        <docker.image.prefix>militer/face-recognition</docker.image.prefix>
     </properties>
 
     <dependencies>

@@ -41,7 +41,7 @@ public class FaceImageDecector {
         cascadeClassifier.detectMultiScale(imageMat, faceDetections);
         for (Rect rect : faceDetections.toArray()) {
             Imgproc.rectangle(imageMat, new Point(rect.x, rect.y), new Point(rect.x + rect.width, rect.y + rect.height),
-                    new Scalar(0, 255, 0), 3);
+                    new Scalar(0, 255, 0), 5);
         }
         MatOfByte result = new MatOfByte();
         Imgcodecs.imencode("." + imageData.getExtension(), imageMat, result);
