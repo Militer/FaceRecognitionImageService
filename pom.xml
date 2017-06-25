@@ -6,11 +6,11 @@
 
     <groupId>com.militaru.face-recognition</groupId>
     <artifactId>image-service</artifactId>
-    <version>0.1-SNAPSHOT</version>
+    <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>car-race-car-service</name>
-    <description>The server responsible for the images and the face recognition process</description>
+    <name>face-recognition-image-service</name>
+    <description>The server responsible for storing the images and face recognition algorithm.</description>
 
 
     <parent>

@@ -1,6 +1,6 @@
 package application.controller;
 
-import application.interceptor.performance.PerformanceInterceptor;
+import application.interceptor.performance.PerformanceResponseInterceptor;
 import application.model.RequestData;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,6 +17,6 @@ import java.util.List;
 public class RequestMonitorController {
     @GetMapping
     public List<RequestData> getRequestsData() {
-        return PerformanceInterceptor.getRequests();
+        return PerformanceResponseInterceptor.getRequests();
     }
 }
